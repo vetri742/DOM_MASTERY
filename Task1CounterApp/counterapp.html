@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div class="container d-flex justify-content-center flex-column align-items-center my-5 bg-dark text-light py-5">
+        <h1 id="one">0</h1>
+        <button class="btn btn-danger my-4" id="add">
+            Increase
+        </button>
+          <button class="btn btn-danger my-4" id="sub">
+            Increase
+        </button>
+    </div>
+
+
+    
+</body>
+<script>
+    let count=0
+    let a=document.getElementById("one")
+    let b=document.getElementById("add")
+    let c=document.getElementById("sub")
+    b.addEventListener("click",()=>
+    {
+    count++
+    countdisplay()
+
+    })
+    c.addEventListener("click",()=>
+    {
+        count--
+        countdisplay()
+    })
+    function countdisplay()
+    {
+        a.textContent=count;
+    }
+</script>
+</html>
